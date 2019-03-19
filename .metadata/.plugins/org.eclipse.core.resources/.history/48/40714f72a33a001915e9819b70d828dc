@@ -1,0 +1,5 @@
+package fr.roudane.utilisateur.service;
+
+public interface IUtilisateurService {
+
+}

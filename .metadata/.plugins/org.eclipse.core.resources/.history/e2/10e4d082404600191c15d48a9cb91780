@@ -1,0 +1,7 @@
+package fr.aberwag.universite.controller.impl;
+
+import fr.aberwag.universite.controller.IenseignantController;
+
+public class EnseignantController implements IenseignantController{
+
+}

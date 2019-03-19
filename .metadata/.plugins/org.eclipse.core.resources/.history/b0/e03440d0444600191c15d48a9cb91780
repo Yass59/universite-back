@@ -1,0 +1,46 @@
+package fr.aberwag.universite.enseignant.controller.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import fr.aberwag.universite.enseignant.controller.IenseignantController;
+import fr.aberwag.universite.enseignant.domain.Enseignant;
+import fr.aberwag.universite.enseignant.service.impl.EnseignantServiceImpl;
+@Controller
+public class EnseignantController implements IenseignantController{
+
+	@Autowired EnseignantServiceImpl enseignantservice;
+
+	@Override
+	@GetMapping("/enseignants")
+	public List<Enseignant> findAll() {
+	
+		
+		List<Enseignant>liste = enseignantservice.findAll();
+		
+		
+		
+		
+		
+		return liste;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

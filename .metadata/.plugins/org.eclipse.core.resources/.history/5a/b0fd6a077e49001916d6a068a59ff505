@@ -1,0 +1,5 @@
+package fr.aberwag.universite.matiere.repository.impl;
+
+public interface ImatiereRepository {
+
+}

@@ -1,0 +1,9 @@
+package fr.aberwag.universite.enseignant.repository.impl;
+
+import org.springframework.stereotype.Repository;
+
+import fr.aberwag.universite.enseignant.repository.Irepositoryenseignant;
+@Repository
+public class EnseignantRepositoryImpl implements Irepositoryenseignant {
+
+}

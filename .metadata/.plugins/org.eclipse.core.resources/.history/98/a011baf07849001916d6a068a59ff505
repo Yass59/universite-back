@@ -1,0 +1,20 @@
+package fr.aberwag.universite.enseignant.controller;
+
+import java.util.List;
+
+import fr.aberwag.universite.enseignant.domain.Enseignant;
+
+public interface IenseignantController {
+
+	
+	public List<Enseignant>findAll();
+	
+	
+	public Enseignant findOne(	Integer id);
+	
+	
+	
+	
+	
+	
+}

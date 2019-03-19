@@ -1,0 +1,67 @@
+package fr.roudane.universite.matiere.controller.impl;
+
+
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import fr.roudane.universite.matiere.controller.Imatierecontroller;
+import fr.roudane.universite.matiere.domain.matierebean;
+import fr.roudane.universite.matiere.service.impl.MatiereService;
+
+@Controller
+public class MatiereController implements Imatierecontroller {
+
+	@Autowired MatiereService matiereservice;
+	
+	
+	@Override
+	@GetMapping("/matiere")
+	public String getmatiere(Model model) {
+		
+		
+		List<matierebean>liste = matiereservice.getall();
+		
+		model.addAttribute("m", liste);
+		
+		
+		
+		
+		
+		return "/matiere/matiere";
+	}
+
+
+	@Override
+	@GetMapping("/infomatiere")
+	public String getOnematiere(Model model, Integer id) {
+		
+		
+		
+		matierebean m = matiereservice.findone(id);
+		
+		model.addAttribute("m", m);
+		
+		
+		
+		
+		
+		return "/matiere/matiereinfo";
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

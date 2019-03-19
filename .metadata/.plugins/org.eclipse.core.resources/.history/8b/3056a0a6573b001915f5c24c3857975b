@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<h1>AJOUT D'UTILISATEURS</h1>
+
+
+
+
+<form  method="post" class="color">
+    <fieldset>
+        <legend>Vos Coordonnées</legend>
+        
+        <br/>
+        <br/>
+
+        <label>Nom :</label>
+        <br>
+        <input type="text" name="nom" placeholder="Nom"  class="dim_block2" id="colorBlock"/>
+        <br/>
+        <br/>
+        <label>Prénom :</label>
+        <br/>
+        <input type="text" name="prenom" placeholder="Prénom"  class="dim_block2"/>
+        <br/>
+       
+     <br/>
+        <label>Numero</label>
+        <br/>
+        <input type="text" name="numero"  class="dim_block2"/>
+        <br/>
+        
+        <br/>
+        <label>Phone:</label>
+        <br/>
+        <input type="text" name="phone"   class="dim_block2"/>
+        <br/>
+        <br/>
+        <label>Email :</label>
+        <br/>
+        <input type="email" name="email"  class="dim_block2"/>
+        <br/>
+        <br/>
+        <label>Adresse</label>
+        <br/>
+        <input type="text" name="adresse"   class="dim_block2"/>
+        <br/>
+       <br/>
+       <label>Photo</label>
+        <br>
+        <input type="text" name="photo"   class="dim_block2"/>
+       
+        <br/>
+        <br/>
+        
+        
+
+
+    </fieldset>
+    <br/>
+    
+  
+  
+</form>
+
+
+</body>
+</html>

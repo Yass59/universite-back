@@ -1,0 +1,54 @@
+package fr.aberwag.universite.enseignant.controller.impl;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import fr.aberwag.universite.enseignant.controller.IenseignantController;
+import fr.aberwag.universite.enseignant.domain.Enseignant;
+import fr.aberwag.universite.enseignant.service.impl.EnseignantServiceImpl;
+@Controller
+public class EnseignantController implements IenseignantController{
+
+	Logger log = LoggerFactory.getLogger(EnseignantController.class);
+	
+	
+	
+	
+	
+	@Autowired EnseignantServiceImpl enseignantservice;
+
+	@Override
+	@GetMapping("/enseignants")
+	public List<Enseignant> findAll() {
+	
+		
+		List<Enseignant>liste = enseignantservice.findAll();
+		
+		log.info("nombre des enseignants : {}", liste.size());
+		
+		
+		
+		return liste;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

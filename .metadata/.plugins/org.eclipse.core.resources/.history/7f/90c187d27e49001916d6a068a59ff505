@@ -1,0 +1,7 @@
+package fr.aberwag.universite.note.repository.impl;
+
+import fr.aberwag.universite.note.repository.InoteRepository;
+
+public class NoteRepository implements InoteRepository {
+
+}

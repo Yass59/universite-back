@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Ajout client</title>
+</head>
+<body>
+
+
+
+
+<h1>AJOUT D'UN CLIENT</h1>
+
+
+
+
+	<form th:action="@{ajouter-client}" method="post" class="color"
+		th:object="${client}">
+		<fieldset>
+			<legend>Le client</legend>
+
+			<label>Numero :</label> <input type="text" name="numero" 
+				class="dim_block2" id="colorBlock" th:field="*{numero}" /> 
+				<label>nom
+				:</label> <input type="text" name="nom" 
+				class="dim_block2" id="colorBlock" th:field="*{nom}" /> 
+				<label>prenom</label>
+			<input type="text" name="prenom" class="dim_block2" id="colorBlock"
+				th:field="*{prenom}" />
+				 <label>ville:</label> <input type="text"
+				name="ville" class="dim_block2" id="colorBlock"
+				th:field="*{ville}" /> 
+				<label>date naissance :</label> <input type="text"
+				name="datenaissance" class="dim_block2" id="colorBlock"
+				th:field="*{date}" />  
+				<label>adresse</label> <input type="text"
+				name="adresse" class="dim_block2" id="colorBlock"
+				th:field="*{adresse}" />
+				<label>code postal</label> <input type="text"
+				name="photo" class="dim_block2" id="colorBlock"
+				th:field="*{code_postal}" />
+				<label>email</label> <input type="email"
+				name="email" class="dim_block2" id="colorBlock"
+				th:field="*{email}" />
+
+				<label>phone</label> <input type="text"
+				name="phone" class="dim_block2" id="colorBlock"
+				th:field="*{phone}" />
+
+
+
+		</fieldset>
+
+
+
+		<input type="submit" value="Envoyer" id="colorBlock" /> <input
+			type="submit" value="Annuler" id="colorBlock" />
+
+	</form>
+
+<a href="pizza">retour</a>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

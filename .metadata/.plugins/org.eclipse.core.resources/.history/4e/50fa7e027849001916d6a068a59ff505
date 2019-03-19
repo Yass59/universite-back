@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" th:href= "@{css/enseignant/info.css}"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<h1>Information enseignant</h1>
+
+
+<div>
+
+<p th:text = "${e.nom}"></p>
+<p th:text = "${e.prenom}"></p>
+
+
+<ul>
+
+<li th:text ="${e.numero}"></li>
+<li th:text ="${e.datenaissance}"></li>
+<li th:text ="${e.dateembauche}"></li>
+<li th:text ="${e.sexe}"></li>
+<li th:text ="${e.grade}"></li>
+
+
+
+</ul>
+
+<img alt="" th:src="${e.photo}">
+
+
+
+
+
+
+
+</div>
+<br/>
+<a th:href = "@{modif(id=${e.id})}">modifier</a>
+<a th:href = "@{supprimer(id=${e.id})}">supprimer</a>
+<a th:href = "@{enseignant}">retour</a>
+
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+package fr.roudane.client.controller.impl;
+
+import org.springframework.ui.Model;
+
+import fr.roudane.client.controller.IClientController;
+
+public class ClientController implements IClientController {
+
+	@Override
+	public String getCLIENT(Model model) {
+		
+		
+		
+		
+		
+		return null;
+	}
+
+}

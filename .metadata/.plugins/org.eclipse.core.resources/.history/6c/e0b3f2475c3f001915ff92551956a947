@@ -1,0 +1,5 @@
+package fr.roudane.universite.enseignant.domain;
+
+public class Enseignant {
+
+}

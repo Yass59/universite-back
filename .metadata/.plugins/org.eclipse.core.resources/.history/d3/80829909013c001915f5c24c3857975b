@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Insert title here</title>
+</head>
+<body>
+<h1>MODIFICATION</h1>
+
+
+
+
+	<form th:action="@{ajouter-user}" method="post" class="color"
+		th:object="${u}">
+		<fieldset>
+			<legend>Vos Coordonnées</legend>
+
+			<label>Nom :</label> <input type="text" th:value = "${u.nom}" name="nom" placeholder="Nom"
+				class="dim_block2" id="colorBlock" th:field="*{nom}" />
+				 <label>Prénom
+				:</label> <input type="text"  th:value = "${u.prenom}" name="prenom" placeholder="Prénom"
+				class="dim_block2" id="colorBlock" th:field="*{prenom}" /> 
+				<label>Numero</label> <input type="text" th:value = "${u.numero}" name="numero" class="dim_block2" id="colorBlock"
+				th:field="*{numero}" />
+				 <label>Phone:</label> <input type="text"
+				name="phone" class="dim_block2"  th:value = "${u.phone}" id="colorBlock" th:field="*{phone}" />
+				 <label>Email :</label> <input type="email" th:value = "${u.email}" name="email" class="dim_block2" id="colorBlock"
+				th:field="*{email}" />
+				 <label>Adresse</label> <input type="text"
+				name="adresse" th:value = "${u.adresse}" class="dim_block2" id="colorBlock"
+				th:field="*{adresse}" /> 
+				<label>Photo</label> <input type="text"
+				name="photo" class="dim_block2"  th:value = "${u.adresse}" id="colorBlock" th:field="*{photo}" />
+
+
+
+
+		</fieldset>
+
+
+
+		<input type="submit" value="Envoyer" id="colorBlock" /> <input
+			type="submit" value="Annuler" id="colorBlock" />
+
+	</form>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

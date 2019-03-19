@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" th:href= "@{css/enseignant/e.css}"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+
+
+
+<h1>Liste des etudiants</h1>
+
+<a th:href = "@{ajouteretudiant}">AJOUTER etudiant</a>
+
+<br/>
+
+<br/>
+
+
+<div id ="entete" th:each = "e : ${e}" class ="container">
+
+
+<p th:text = "${e.numeroetudiant}">Numero:</p>
+<p th:text = "${e.nom}">Nom:</p>
+<p th:text = "${e.prenom}">Prenom:</p>
+<p th:text = "${#dates.format(e.datenaissance, 'yyyy/MM/dd')}">Date de naissance:</p>
+<p th:text = "${e.sexe}">Sexe:</p>
+
+
+
+
+
+
+ <a th:href = "@{etudiantinfo(id=${e.id})}"><img alt="" th:src="${e.photo}">
+</a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

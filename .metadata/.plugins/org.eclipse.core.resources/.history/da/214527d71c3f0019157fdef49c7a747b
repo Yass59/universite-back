@@ -1,0 +1,5 @@
+package fr.roudane.client.service.impl;
+
+public class ClientService {
+
+}

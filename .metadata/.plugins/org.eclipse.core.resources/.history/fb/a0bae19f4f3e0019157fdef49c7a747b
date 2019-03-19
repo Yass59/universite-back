@@ -1,0 +1,65 @@
+package fr.roudane.pizzeria.domain;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+public class PizzeriaBean {
+
+	@Entity()
+	@Table(name="Pizza")
+	
+	
+	
+	private int id;
+	private String libelle;
+	private int numero;
+	private String photo;
+	private String reference;
+	private int prix;
+	private String description;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getLibelle() {
+		return libelle;
+	}
+	public void setLibelle(String libelle) {
+		this.libelle = libelle;
+	}
+	public int getNumero() {
+		return numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public String getPhoto() {
+		return photo;
+	}
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+	public String getReference() {
+		return reference;
+	}
+	public void setReference(String reference) {
+		this.reference = reference;
+	}
+	public int getPrix() {
+		return prix;
+	}
+	public void setPrix(int prix) {
+		this.prix = prix;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	
+	
+}

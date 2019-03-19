@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel = "stylesheet" th:href= "@{css/enseignant/ajout.css}"/>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+<h1>Ajouter un etudiant</h1>
+
+
+
+
+	<form id = formulaire th:action="@{ajout-etudiant}" method="post" class="color"
+		th:object="${e}">
+		<fieldset>
+			<legend>L'étudiant</legend>
+
+			<label>Numero :</label> <input type="text" name="numeroetudiant" 
+				class="dim_block2" id="numero" th:field="*{numeroetudiant}" /> 
+				
+				<label>Nom
+				:</label> <input type="text" name="nom" 
+				class="dim_block2" id="nom" th:field="*{nom}" /> 
+				
+				<label>Prenom:</label>
+				<input type="text" name="prenom" class="dim_block2" id="prenom"
+				th:field="*{prenom}" />
+				 
+				 
+				 
+				 
+				 <label>M:</label> 
+				<input type="radio" name="sexe" class="dim_block2" id="sexem" th:field="*{sexe}" value="M" />
+				<label>F:</label>
+				<input type="radio"
+				name="sexe" class="dim_block2" id="sexef"
+				th:field="*{sexe}" value ="F" checked="checked" />
+				 
+				 
+				<label>Date naissance:</label> <input type="date"
+				name="datenaissance" class="dim_block2" id="datenaissance"
+				th:field="*{datenaissance}" />  
+				<br/>
+				<br/>
+				
+				 
+
+				<label>Photo:</label> <input type="text"
+				name="photo" class="dim_block2" id="photo"
+				th:field="*{photo}" />
+		</fieldset>
+
+
+		<input type="submit" value="Envoyer" id="colorBlock" />
+		<input onclick="history.go(-1)" type="reset" value="annuler" id="colorBlock" />
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

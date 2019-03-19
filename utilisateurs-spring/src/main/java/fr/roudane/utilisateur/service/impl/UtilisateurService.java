@@ -1,0 +1,61 @@
+package fr.roudane.utilisateur.service.impl;
+
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import fr.roudane.utilisateur.domain.Utilisateur;
+import fr.roudane.utilisateur.repository.IUtilisateurRepository;
+import fr.roudane.utilisateur.service.IUtilisateurService;
+@Service
+public class UtilisateurService implements IUtilisateurService{
+
+	@Autowired
+	IUtilisateurRepository utilisateurRepository;
+
+	@Override
+	public List<Utilisateur> findallusers() {
+		List<Utilisateur>listeUser = utilisateurRepository.findAll();
+
+
+
+
+
+		return listeUser;
+	}
+
+	@Override
+	public Utilisateur findOneUser(Integer id) {
+
+		Utilisateur u = utilisateurRepository.findOne(id);
+		return u;
+	}
+
+	@Override
+	public void supprimer(Integer id) {
+		utilisateurRepository.delete(id);
+
+
+
+	}
+
+	@Override
+	public void AjouterUtilisater(Utilisateur user) {
+		utilisateurRepository.save(user);
+		
+	}
+
+	@Override
+	public void modifierUtilisater(Utilisateur user) {
+	
+		utilisateurRepository.save(user);
+		
+		
+	}
+
+
+
+
+}

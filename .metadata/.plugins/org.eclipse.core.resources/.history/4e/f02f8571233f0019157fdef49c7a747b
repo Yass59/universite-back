@@ -1,0 +1,57 @@
+package fr.roudane.pizzeria.client.controller.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import fr.roudane.pizzeria.client.controller.IClientController;
+import fr.roudane.pizzeria.client.domain.ClientBean;
+import fr.roudane.pizzeria.client.service.impl.ClientService;
+@Controller
+public class ClientController implements IClientController {
+
+	@Autowired ClientService clientservice;
+	
+	
+	
+	@Override
+	@GetMapping("/client")
+	public String getCLIENT(Model model) {
+		
+		List<ClientBean>Client = clientservice.findAll();
+		model.addAttribute("client", Client);
+		
+		
+		return "clienthtml";
+	}
+
+
+
+	@Override
+	@GetMapping ("/clientinfos")
+	public String avoir1client(Model model, Integer id) {
+
+		ClientBean cli = clientservice.findOne(id);
+		model.addAttribute("client", cli);
+		
+		
+		return "clientinfos";
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

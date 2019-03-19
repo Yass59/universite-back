@@ -1,0 +1,110 @@
+@charset "ISO-8859-1";
+
+
+table,td,tr {
+	border: 1px yellow solid;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-image: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+	text-align: center;
+}
+
+img{
+	
+	width:100px;
+	height: 50px;
+	margin: auto;
+	
+
+
+
+
+
+}
+
+
+	
+	
+	
+#container2 {width : 100% ; height :500px ; background-image :url(../images/paysage_hiver3.jpg) ; background-size : cover ; position : relative ; perspective : 800px ; perspective-origine : top right; } .fondeur {position:absolute ; left : 0px ; height : 100px; } #fondeur1 {top : 380px ;} #fondeur2 {top : 400px ; } @keyframes deplacer { from{transform : translateX(0px) translateY(0px) translateZ(0px);} to{transform : translateX(1000px) translateY(-150px) translateZ(-600px);} } #fondeur1 {animation : deplacer 16s 0s infinite linear ; } #fondeur2 {animation : deplacer 14s 2s infinite linear ; }
+
+
+h1{
+	color: yellow;
+	
+	
+	
+	
+}
+
+
+.pizza {
+  position: relative;
+  top: 50px;
+  left: 450px;
+}
+
+.crust {
+  width: 500px;
+  height: 500px;
+  background: burlywood;
+  border-radius: 250px;
+  -webkit-border-radius: 250px;
+  -moz-border-radius: 250px;
+}
+
+.cheese {
+  width: 400px;
+  height: 400px;
+  background: gold;
+  border-radius: 200px;
+  position: relative;
+  top: -450px;
+  left: 50px;
+}
+
+.pepperoni {
+  width: 75px;
+  height: 75px;
+  background: firebrick;
+  border-radius: 37.5px;
+}
+
+.pep1 {
+  position: relative;
+  top: -800px;
+  left: 125px;
+}
+
+.pep2 {
+  position: relative;
+  top: -730px;
+  left: 80px;
+}
+
+.pep3 {
+  position: relative;
+  top: -700px;
+  left: 215px;
+}
+
+.pep4 {
+  position: relative;
+  top: -925px;
+  left: 210px;
+}
+
+.pep5 {
+  position: relative;
+  top: -1100px;
+  left: 300px;
+}
+
+.pep6 {
+  position: relative;
+  top: -1027px;
+  left: 350px;
+}
+
+
+}

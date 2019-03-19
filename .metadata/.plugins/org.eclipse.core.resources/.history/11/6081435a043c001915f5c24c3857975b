@@ -1,0 +1,23 @@
+package fr.roudane.utilisateur.controller;
+
+import org.springframework.ui.Model;
+
+import fr.roudane.utilisateur.domain.Utilisateur;
+
+public interface IUtilisateurController {
+	public String getUtilisateurs(Model model);
+	
+	
+	public String InfoUtilisateur (Model model, Integer id);
+	
+	
+	public String supprimerUtilisateur (Model model, Integer id);
+	
+	
+	public String ajouterutilisateur(Model model);
+	
+	public String ajouterutilisateurValidation(Model model, Utilisateur u);
+	
+	
+	public String modifierFormulaire(Model model, Integer id);
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+<ul th:each = "liste : ${listeutilisateurs}">
+<li th:text = "${utilisateur}"></li>
+
+
+</ul>
+
+
+
+
+
+
+</body>
+</html>

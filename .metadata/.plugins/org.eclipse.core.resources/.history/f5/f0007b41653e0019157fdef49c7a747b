@@ -1,0 +1,16 @@
+package fr.roudane.pizzeria.controller;
+
+import org.springframework.ui.Model;
+
+public interface IPizzeriaController {
+
+	public String getPizza(Model model);
+	
+	public String InfoPizza (Model model, Integer id);
+	
+	public String supprimerPizza (Model model, Integer id);
+	
+	
+	
+	
+}

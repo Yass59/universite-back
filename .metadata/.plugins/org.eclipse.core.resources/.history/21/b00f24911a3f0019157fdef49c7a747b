@@ -1,0 +1,5 @@
+package fr.roudane.client.controller.impl;
+
+public class PizzaController implements Ip {
+
+}

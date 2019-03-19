@@ -1,0 +1,5 @@
+package fr.roudane.test.repository;
+
+public interface IUtilisateurRepository {
+
+}

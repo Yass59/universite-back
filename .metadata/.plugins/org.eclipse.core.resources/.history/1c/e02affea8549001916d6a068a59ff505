@@ -1,0 +1,36 @@
+package fr.aberwag.universite.enseignant.repository.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import fr.aberwag.universite.enseignant.domain.Enseignant;
+import fr.aberwag.universite.enseignant.repository.Irepositoryenseignant;
+@Repository
+public class EnseignantRepositoryImpl implements Irepositoryenseignant {
+
+	@Override
+	public List<Enseignant> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Enseignant getOne(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Enseignant save(Enseignant enseignant) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteById(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

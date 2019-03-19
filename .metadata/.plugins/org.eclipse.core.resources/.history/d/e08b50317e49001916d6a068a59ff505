@@ -1,0 +1,5 @@
+package fr.aberwag.universite.note.repository.impl;
+
+public interface Irepositorynote {
+
+}

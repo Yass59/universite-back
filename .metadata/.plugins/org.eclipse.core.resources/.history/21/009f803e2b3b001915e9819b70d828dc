@@ -1,0 +1,9 @@
+package fr.roudane.utilisateur.service;
+
+import java.util.ArrayList;
+
+import fr.roudane.utilisateur.domain.Utilisateur;
+
+public interface IUtilisateurService {
+	public ArrayList<Utilisateur>findallusers();
+}

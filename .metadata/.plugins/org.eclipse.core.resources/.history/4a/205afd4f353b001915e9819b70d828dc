@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+bonjour
+
+<table>
+<tr th:each = "u : ${users}">
+
+<td th:text = "${u.id}"></td>
+<td th:text = "${u.prenom}"></td>
+<td th:text = "${u.nom}"></td>
+<td th:text = "${u.numero}"></td>
+<td th:text = "${u.phone}"></td>
+<td th:text = "${u.email}"></td>
+<td th:text = "${u.adresse}"></td>
+
+</tr>
+</table>
+
+</body>
+</html>

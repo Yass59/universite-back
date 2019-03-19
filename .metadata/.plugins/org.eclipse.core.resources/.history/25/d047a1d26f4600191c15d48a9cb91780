@@ -1,0 +1,5 @@
+package fr.aberwag.universite.etudiant.controller;
+
+public class EtudiantController {
+
+}

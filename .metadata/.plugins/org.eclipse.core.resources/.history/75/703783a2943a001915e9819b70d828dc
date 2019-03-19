@@ -1,0 +1,5 @@
+package fr.roudane.utilisateur.controller;
+
+public class UtilisateurController {
+
+}

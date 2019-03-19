@@ -1,0 +1,101 @@
+package fr.roudane.universite.matiere.controller.impl;
+
+
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import fr.roudane.universite.matiere.controller.Imatierecontroller;
+import fr.roudane.universite.matiere.domain.matierebean;
+import fr.roudane.universite.matiere.service.impl.MatiereService;
+
+@Controller
+public class MatiereController implements Imatierecontroller {
+
+	@Autowired MatiereService matiereservice;
+	
+	
+	@Override
+	@GetMapping("/matiere")
+	public String getmatiere(Model model) {
+		
+		
+		List<matierebean>liste = matiereservice.getall();
+		
+		model.addAttribute("m", liste);
+		
+		
+		
+		
+		
+		return "/matiere/matiere";
+	}
+
+
+	@Override
+	@GetMapping("/infomatiere")
+	public String getOnematiere(Model model, Integer id) {
+		
+		
+		
+		matierebean m = matiereservice.findone(id);
+		
+		model.addAttribute("matiere", m);
+		
+		
+		
+		
+		
+		return "/matiere/matiereinfo";
+	}
+
+
+	@Override
+	@GetMapping("/ajoutermatiere")
+	public String ajoutmatiere(Model model) {
+		
+		matierebean m = new matierebean();
+		model.addAttribute("m", m);
+		
+		
+		
+		
+		return "/matiere/ajoutmatiere";
+	}
+
+
+	@Override
+	@PostMapping("/ajout-matiere")
+	public String validationajout(Model model, matierebean m) {
+		
+		
+		matiereservice.ajoutermatiere(m);
+		
+		
+
+		if(m == null) {
+			return "redirect:/ajoutermatiere";
+		}
+		else {
+		return "redirect:/matiere";
+	}
+		
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

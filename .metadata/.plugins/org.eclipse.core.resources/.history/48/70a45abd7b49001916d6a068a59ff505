@@ -1,0 +1,5 @@
+package fr.aberwag.universite.enseignant.repository.impl;
+
+public class EnseignantRepositoryImpl {
+
+}

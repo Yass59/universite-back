@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+
+table,td,tr {
+	border: 1px yellow solid;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-image: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+	text-align: center;
+}
+
+img{
+	
+	width:100px;
+	height: 50px;
+	margin: auto;
+	
+
+
+
+
+
+}
+
+body{
+	background-image:url("https://images2.alphacoders.com/970/thumb-1920-97040.jpg");
+	
+	
+	
+}
+
+
+h1{
+	color: yellow;
+	
+	
+	
+	
+}
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" th:href= "@{Css/pizza.css}"/>
+<title>Insert title here</title>
+</head>
+<body>
+<h1>LISTE DES CLIENTS</h1>
+<a th:href = "@{ajoutclient}">AJOUTER client</a>
+<table>
+
+
+<tr th:each = "c : ${client}">
+
+
+<td th:text = "${c.numero}"></td>
+<td th:text = "${c.nom}"></td>
+<td th:text = "${c.prenom}"></td>
+<td th:text = "${c.date}"></td>
+<td th:text = "${c.code_postal}"></td>
+<td th:text = "${c.email}"></td>
+<td th:text = "${c.phone}">
+<td th:text = "${c.ville}"></td>
+
+<td><a th:href = "@{clientinfos(id=${c.id})}">voir</a> </td>
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

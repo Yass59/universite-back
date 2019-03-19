@@ -1,0 +1,30 @@
+package fr.aberwag.universite.etudiant.repository.impl;
+
+import java.util.List;
+
+import fr.aberwag.universite.etudiant.domain.Etudiant;
+import fr.aberwag.universite.etudiant.repository.Irepositoryetudiant;
+
+public class EtudiantRepository implements Irepositoryetudiant {
+
+	public List<Etudiant> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Etudiant getOne(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Etudiant save(Etudiant etudiant) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void deleteById(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

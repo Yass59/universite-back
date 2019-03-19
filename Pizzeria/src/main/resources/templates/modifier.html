@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" th:href= "@{Css/pizzajout.css}"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+
+	<h1>MODIFICATION D'UNE PIZZA</h1>
+
+
+
+
+	<form th:action="@{modifier-pizza}" method="post" class="color"
+		th:object="${p}">
+		<fieldset>
+			<legend>Votre pizza</legend>
+<input  hidden = "hidden" type="text" id="id" name="id" th:field="*{id}" th:value = "${p.id}"/>
+			<label>Numero :</label> <input type="text" name="numero" 
+				class="dim_block2" id="colorBlock" th:field="*{numero}" th:value = "${p.numero}"/> <label>libelle
+				:</label> <input type="text" name="libelle" 
+				class="dim_block2" id="colorBlock" th:field="*{libelle}" th:value = "${p.libelle}"/> <label>Reference</label>
+
+			<input type="text" name="reference" class="dim_block2" id="colorBlock"
+				th:field="*{reference}" th:value = "${p.reference}" /> <label>prix:</label> <input type="text"
+				name="prix" class="dim_block2" id="colorBlock"
+				th:field="*{prix}" th:value = "${p.prix}"/> <label>description :</label> <input type="text"
+				name="email" class="dim_block2" id="colorBlock"
+				th:field="*{description}" th:value = "${p.description}"/>  <label>Photo</label> <input type="text"
+				name="photo" class="dim_block2" id="colorBlock"
+				th:field="*{photo}" th:value = "${p.photo}"/>
+
+
+
+
+		</fieldset>
+
+
+
+		<input type="submit" value="Envoyer" id="colorBlock" /> <input
+			type="submit" value="Annuler" id="colorBlock" />
+
+
+<a href="pizza">retour</a>
+
+
+	</form>
+
+
+
+
+
+
+
+</body>
+</html>

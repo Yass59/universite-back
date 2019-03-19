@@ -1,0 +1,22 @@
+package fr.roudane.pizzeria.domain;
+
+public class ClientBean {
+	
+	
+	
+	
+	private Integer id;
+	private Integer numero;
+	private String nom;
+	private String prenom;
+	private String ville;
+	private String date;
+	private String adresse;
+	private String code_postal;
+	private String email;
+	private String phone;
+	
+	
+	
+
+}

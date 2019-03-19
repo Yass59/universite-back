@@ -1,0 +1,28 @@
+package fr.roudane.client.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import fr.roudane.client.domain.ClientBean;
+import fr.roudane.client.repository.IClientRepository;
+import fr.roudane.client.service.IClientService;
+@Service
+public class ClientService  implements IClientService{
+
+	
+	@Autowired IClientRepository clientrepository;
+	
+	@Override
+	public List<ClientBean> findAll() {
+
+		List<ClientBean>listeclient = clientrepository.findAll();
+		
+		
+		
+		
+		return listeclient;
+	}
+
+}

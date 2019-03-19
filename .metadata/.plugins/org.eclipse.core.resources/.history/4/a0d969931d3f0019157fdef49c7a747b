@@ -1,0 +1,10 @@
+package fr.roudane.pizzeria.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import fr.roudane.pizzeria.pizza.domain.PizzeriaBean;
+@Repository
+public interface IpizzaRepository extends JpaRepository<PizzeriaBean, Integer>{
+
+}

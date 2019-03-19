@@ -1,0 +1,67 @@
+package fr.aberwag.universite.note.domain;
+
+import java.io.Serializable;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+
+
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+public class Note implements Serializable{
+
+	
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2844610510577631068L;
+
+
+	private NotePK notePK;
+	
+	
+	private Double note;
+	
+	
+	private Etudiant etudiant;
+	
+	
+
+	public Double getNote() {
+		return note;
+	}
+
+	public void setNote(Double note) {
+		this.note = note;
+	}
+
+
+	public Etudiant getEtudiant() {
+		return etudiant;
+	}
+
+
+	public void setEtudiant(Etudiant etudiant) {
+		this.etudiant = etudiant;
+	}
+
+
+	public Matiere getMatiere() {
+		return matiere;
+	}
+
+
+	public void setMatiere(Matiere matiere) {
+		this.matiere = matiere;
+	}
+
+
+	public NotePK getNotePK() {
+		return notePK;
+	}
+
+
+	public void setNotePK(NotePK notePK) {
+		this.notePK = notePK;
+	}
+}

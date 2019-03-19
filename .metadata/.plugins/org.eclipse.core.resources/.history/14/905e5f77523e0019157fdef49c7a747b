@@ -1,0 +1,5 @@
+package fr.roudane.pizzeria.repository;
+
+public interface IpizzaRepository {
+
+}

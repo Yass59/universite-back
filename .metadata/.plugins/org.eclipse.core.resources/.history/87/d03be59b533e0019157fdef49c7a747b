@@ -1,0 +1,10 @@
+package fr.roudane.pizzeria.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import fr.roudane.pizzeria.service.IpizzaService;
+
+@Service
+public class PizzeriaService implements IpizzaService{
+
+}

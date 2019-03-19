@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" th:href= "@{css/enseignant/ajout.css}"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<h1>Ajouter un enseignant</h1>
+
+
+
+
+	<form id = formulaire th:action="@{ajouter-enseignant}" method="post" class="color"
+		th:object="${e}">
+		<fieldset>
+			<legend>L'enseignant</legend>
+
+			<label>Numero :</label> <input type="text" name="numero" 
+				class="dim_block2" id="numero" th:field="*{numero}" /> 
+				
+				<label>Nom
+				:</label> <input type="text" name="nom" 
+				class="dim_block2" id="nom" th:field="*{nom}" /> 
+				
+				<label>Prenom:</label>
+				<input type="text" name="prenom" class="dim_block2" id="prenom"
+				th:field="*{prenom}" />
+				 
+				 
+				 
+				 
+				 <label>M:</label> 
+				<input type="radio" name="sexe" class="dim_block2" id="sexem" th:field="*{sexe}" value="M" />
+				<label>F:</label>
+				<input type="radio"
+				name="sexe" class="dim_block2" id="sexef"
+				th:field="*{sexe}" value ="F" checked="checked" />
+				 
+				 
+				<label>Date naissance:</label> <input type="date"
+				name="datenaissance" class="dim_block2" id="datenaissance"
+				th:field="*{datenaissance}" />  
+				<br/>
+				<br/>
+				
+				<label>Grade:</label> <input type="text"
+				name="grade" class="dim_block2" id="grade"
+				th:field="*{grade}" />
+				
+				<label>Date embauche:</label> <input type="date"
+				name="dateembauche" class="dim_block2" id="dateembauche"
+				th:field="*{dateembauche}" />
+
+				<label>Photo:</label> <input type="text"
+				name="photo" class="dim_block2" id="photo"
+				th:field="*{photo}" />
+		</fieldset>
+
+
+		<input type="button" value="Envoyer" id="colorBlock" onclick="validerLeformulaire();" />
+		<input onclick="history.go(-1)" type="reset" value="annuler" id="colorBlock" />
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" th:src="@{/js/enseignant/validation.js}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+package fr.roudane.utilisateur.controller;
+
+import org.springframework.ui.Model;
+
+public interface IUtilisateurController {
+	public String getUtilisateurs(Model model);
+}

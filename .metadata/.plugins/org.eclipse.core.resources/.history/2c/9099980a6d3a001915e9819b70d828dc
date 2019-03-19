@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+<p>bonjour</p>
+
+<ul th:each = "liste : ${listeutilisateur}">
+<li th:if = "${liste.age gt 10}"/>
+<li th:text = "${liste.nom}"></li>
+
+<li th:text = "${liste.prenom}"></li>
+
+<li th:text = "${liste.age}"></li>
+</ul>
+
+
+
+
+
+</body>
+</html>

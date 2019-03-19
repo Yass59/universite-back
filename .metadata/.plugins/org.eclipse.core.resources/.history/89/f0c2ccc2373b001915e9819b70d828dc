@@ -1,0 +1,7 @@
+@charset "ISO-8859-1";
+
+table,td,tr {
+	border: 1px yellow solid;
+	background: purple;
+	text-align: center;
+}

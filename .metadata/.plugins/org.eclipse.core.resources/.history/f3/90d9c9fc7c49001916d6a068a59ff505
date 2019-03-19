@@ -1,0 +1,11 @@
+package fr.aberwag.universite.enseignant.repository;
+
+import java.util.List;
+
+import fr.aberwag.universite.enseignant.domain.Enseignant;
+
+public interface Irepositoryenseignant {
+
+	List<Enseignant> findAll();
+
+}

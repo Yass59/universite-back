@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Insert title here</title>
+</head>
+<body>
+bonjour
+<p th:text = "${user.nom}"></p>
+<img alt="image user" th:src ="${user.photo}"/>
+
+
+<a>users</a>
+
+</body>
+</html>

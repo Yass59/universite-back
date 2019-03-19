@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+
+<h1 th:text = "${nom}"></h1>
+<h1 th:text = "${agefabrice}"></h1>
+<h1 th:text = "${titre}"></h1>
+<h1 th:text = "${vrai}"></h1>
+
+<h1> Les conditions</h1>
+
+<p th:if= "${vrai == true}"> c'est vrai </p>
+<p th:if= "${agefabrice lt 30}"> il a plus de 30ans </p>
+
+
+
+<p th:if="${agefabrice == 26}">age : 26 ans</p>
+<p th:if="${agefabrice eq 26}">age : 26 ans</p>
+<p th:if="${agefabrice gt 26}">l'age est plus grand que 26</p>
+<p th:if="${agefabrice lt 26}">l'age est plus petit que 26</p>
+<p th:if="${agefabrice le 26}">l'age est inf ou égal que 26</p>
+<p th:if="${agefabrice ge 26}">l'age est sup ou égal que 26</p>
+
+<p th:if="${age gt 26}">la variable age est plus sup a 26</p>
+<p th:unless="${age gt 26}">la variable age est  inf a 26</p>
+
+<p th:switch="${nombre}">
+<p th:case="55">55</p>
+<p th:case="66">66</p>
+<p th:case="26">26</p>
+<p th:case="11">11</p>
+<p th:case="100">03</p>
+</p>
+
+<!-- lt "<" -->
+<!-- gt ">" -->
+<!-- le "<=" -->
+<!-- ge ">=" -->
+<!-- eq "==" -->
+Réduire
+
+
+
+
+// gt lt le ge 
+
+</body>
+</html>

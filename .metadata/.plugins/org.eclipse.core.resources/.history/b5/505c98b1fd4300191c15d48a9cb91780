@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+
+
+
+<h1>Ajouter une matiere </h1>
+
+
+
+
+	<form id = formulaire th:action="@{ajout-matiere}" method="post" class="color"
+		th:object="${e}">
+		<fieldset>
+			<legend>matiere</legend>
+
+			<label>Numero :</label> <input type="text" name="numero" 
+				class="dim_block2" id="numero" th:field="*{numero}" /> 
+				
+				<label>Nom
+				:</label> <input type="text" name="nom" 
+				class="dim_block2" id="nom" th:field="*{nom}" /> 
+				
+				<label>coef:</label>
+				<input type="text" name="coef" class="dim_block2" id="coef"
+				th:field="*{coef}" />
+				 
+				 
+				 
+		</fieldset>
+
+
+		<input type="submit" value="Envoyer" id="colorBlock" />
+		<input onclick="history.go(-1)" type="reset" value="annuler" id="colorBlock" />
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

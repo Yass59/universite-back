@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<h1>Pizza</h1>
+
+<table id = "table">
+<tr th:each = "p : ${pizza}">
+<td><img th:src = "${p.photo}"></img></td>
+<td th:text = "${p.id}"></td>
+<td th:text = "${p.libelle}"></td>
+<td th:text = "${p.reference}"></td>
+<td th:text = "${p.prix}"></td>
+<td th:text = "${p.description}"></td>
+</tr>
+</table>
+
+</body>
+</html>

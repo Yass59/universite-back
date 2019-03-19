@@ -1,0 +1,7 @@
+package fr.aberwag.universite.enseignant.repository.impl;
+
+import fr.aberwag.universite.enseignant.repository.Irepositoryenseignant;
+
+public class EnseignantRepositoryImpl implements Irepositoryenseignant {
+
+}

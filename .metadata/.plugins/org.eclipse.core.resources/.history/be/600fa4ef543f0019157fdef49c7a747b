@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+
+
+
+
+<h1>Modifier Client</h1>
+
+
+
+
+	<form th:action="@{modif}" method="post" class="color"
+		th:object="${c}">
+		<fieldset>
+			<legend>Le client</legend>
+<input  hidden = "hidden" type="text" id="id" name="id" th:field="*{id}" th:value = "${c.id}"/>
+			<label>Numero :</label> <input type="text" name="numero" 
+				class="dim_block2" id="colorBlock" th:field="*{numero}" th:value = "${c.numero}"  /> 
+				<label>nom
+				:</label> <input type="text" name="nom" 
+				class="dim_block2" id="colorBlock" th:field="*{nom}" th:value = "${c.nom}"/> 
+				<label>prenom</label>
+			<input type="text" name="prenom" class="dim_block2" id="colorBlock"
+				th:field="*{prenom}" th:value = "${c.prenom}"/>
+				 <label>ville:</label> <input type="text"
+				name="ville" class="dim_block2" id="colorBlock"
+				th:field="*{ville}" th:value = "${c.ville}"/> 
+				<label>date naissance :</label> <input type="text"
+				name="datenaissance" class="dim_block2" id="colorBlock"
+				th:field="*{date}" th:value = "${c.date}" />  
+				<label>adresse</label> <input type="text"
+				name="adresse" class="dim_block2" id="colorBlock"
+				th:field="*{adresse}" th:value = "${c.adresse}"/>
+				<label>code postal</label> <input type="text"
+				name="photo" class="dim_block2" id="colorBlock"
+				th:field="*{code_postal}" th:value = "${c.code_postal}"/>
+				<label>email</label> <input type="email"
+				name="email" class="dim_block2" id="colorBlock"
+				th:field="*{email}" th:value = "${c.email}"/>
+
+				<label>phone</label> <input type="text"
+				name="phone" class="dim_block2" id="colorBlock"
+				th:field="*{phone}" th:value = "${c.phone}"/>
+
+
+
+		</fieldset>
+
+
+
+		<input type="submit" value="Envoyer" id="colorBlock" /> <input
+			type="submit" value="Annuler" id="colorBlock" />
+
+	</form>
+
+<a href="client">retour</a>
+
+
+
+
+
+
+
+</body>
+</html>

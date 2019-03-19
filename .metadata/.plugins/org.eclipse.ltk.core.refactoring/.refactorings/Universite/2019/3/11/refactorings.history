@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;fr.roudane.universite.matiere.repository.IetudiantRepository&apos; to &apos;ImatiereRepository&apos;&#x0D;&#x0A;- Original project: &apos;Universite&apos;&#x0D;&#x0A;- Original element: &apos;fr.roudane.universite.matiere.repository.IetudiantRepository&apos;&#x0D;&#x0A;- Renamed element: &apos;fr.roudane.universite.matiere.repository.ImatiereRepository&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;IetudiantRepository&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;fr.roudane.universite.matiere.repository{IetudiantRepository.java[IetudiantRepository" matchStrategy="1" name="ImatiereRepository" qualified="false" references="true" similarDeclarations="false" stamp="1552300626640" textual="false" version="1.0"/>
+</session>

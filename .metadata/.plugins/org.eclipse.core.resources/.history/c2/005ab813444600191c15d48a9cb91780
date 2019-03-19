@@ -1,0 +1,28 @@
+package fr.aberwag.universite.enseignant.controller.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import fr.aberwag.universite.enseignant.controller.IenseignantController;
+import fr.aberwag.universite.enseignant.service.impl.EnseignantServiceImpl;
+@Controller
+public class EnseignantController implements IenseignantController{
+
+	@Autowired EnseignantServiceImpl enseignantservice;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

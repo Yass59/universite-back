@@ -1,0 +1,5 @@
+package fr.aberwag.universite.enseignant.controller;
+
+public interface IenseignantController {
+
+}

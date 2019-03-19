@@ -1,0 +1,110 @@
+
+@charset "ISO-8859-1";
+
+
+
+body{
+	
+	background-color: yellow;
+	
+	
+}
+
+#images2{
+	height: 100px;
+	width: 100px;
+	background-color: yellow;
+	
+	
+}
+
+
+
+form{
+
+    width: 220px;
+
+    margin: auto;
+
+    color: purple;
+
+}
+
+.dim_block2{
+
+    width: 180px;
+
+    background: grey;
+
+    color:black;
+
+    border-radius: 5px;
+
+}
+
+.dim_block3{
+
+    width: 180px;
+
+    height: 80px;
+
+    border-left: purple;
+
+    background: purple;
+
+    border-radius: 5px;
+
+}
+
+.dim_block4{
+
+    width: 100px;
+
+    margin-left: 3px;
+
+    border-radius: 5px;
+
+}
+
+label{
+
+    color: black;
+
+}
+
+fieldset{
+
+    color: purple;
+
+    border-color: purple;
+
+}
+
+#colorBlock{
+
+    background: #ffe8e6;
+
+    color: purple;
+
+    mask-border-mode: inherit;
+
+margin-left: 18px;
+ 
+
+}
+
+
+#images{
+	text-align: center;
+	margin-left: 31%;
+	
+	
+}
+
+	
+	
+	
+	
+	
+}
+@charset "ISO-8859-1";

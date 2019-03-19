@@ -1,0 +1,27 @@
+package fr.roudane.utilisateur.service.impl;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import antlr.collections.List;
+import fr.roudane.utilisateur.domain.Utilisateur;
+import fr.roudane.utilisateur.repository.IUtilisateurRepository;
+import fr.roudane.utilisateur.service.IUtilisateurService;
+
+public class UtilisateurService implements IUtilisateurService{
+
+	@Autowired
+	IUtilisateurRepository utilisateurRepository;
+	
+	@Override
+	public List<Utilisateur>findallusers() {
+	Lis
+		return null;
+	}
+
+	
+	
+	
+	
+}

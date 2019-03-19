@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" th:href= "@{css/enseignant/ajout.css}"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+
+
+<h1>Modifier un etudiant</h1>
+
+
+
+
+	<form id = formulaire th:action="@{modifvalid}" method="post" class="color"
+		th:object="${e}">
+		<fieldset>
+			<legend>L'etudiant</legend>
+			<input hidden type="text" name = "id" id = "id" th:field= "*{id}" th:value= "${e.id}"/>
+			
+			<label>Numero :</label> <input type="text" name="numero" 
+				class="dim_block2"  th:field="*{numeroetudiant}" th:value= "${e.numeroetudiant}"/> 
+				
+				<label>Nom
+				:</label> <input type="text" name="nom" 
+				class="dim_block2"  th:field="*{nom}" th:value= "${e.nom}"/> 
+				
+				<label>Prenom:</label>
+				<input type="text" name="prenom" class="dim_block2" 
+				th:field="*{prenom}" th:value= "${e.prenom}"/>
+				 
+				 
+				 
+				 
+				 <label>M:</label> 
+				<input type="radio" name="sexe" class="dim_block2"  th:field="*{sexe}" value="M" th:value= "${e.sexe}"/>
+				<label>F:</label>
+				
+				<input type="radio"
+				name="sexe" class="dim_block2" 
+				th:field="*{sexe}" value ="F" checked="checked" th:value= "${e.sexe}"/>
+				 
+				 
+				<label>Date naissance:</label> <input type="date"
+				name="datenaissance" class="dim_block2" 
+				th:field="*{datenaissance}" th:value= "${e.datenaissance}"/>  
+				<br/>
+				<br/>
+				
+
+				<label>Photo:</label> <input type="text"
+				name="photo" class="dim_block2" 
+				th:field="*{photo}" th:value= "${e.photo}"/>
+		
+		</fieldset>
+
+
+		<input type="submit" value="Envoyer" id="colorBlock" />
+		<input onclick="history.go(-1)" type="reset" value="annuler" id="colorBlock" />
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

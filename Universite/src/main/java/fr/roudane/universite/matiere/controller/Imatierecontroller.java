@@ -1,0 +1,41 @@
+package fr.roudane.universite.matiere.controller;
+
+
+
+import org.springframework.ui.Model;
+
+import fr.roudane.universite.matiere.domain.matierebean;
+
+
+
+public interface Imatierecontroller {
+
+	
+	
+	
+	
+	
+	
+	public String getmatiere(Model model);
+	
+	
+	public String getOnematiere (Model model ,Integer id);
+	
+	public String ajoutmatiere(Model model);
+	
+	
+	public String validationajout (Model model, matierebean m);
+	
+	
+	public String modifiermatiere (Model model, Integer id);
+	
+	
+	public String validationmodification(Model model, matierebean m);
+	
+	
+	
+	
+	
+	
+	
+}

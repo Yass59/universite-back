@@ -1,0 +1,1 @@
+spring.datasource.url=j=jdbc:mariadb://localhost:3306/users

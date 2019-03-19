@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Infos Client</title>
+</head>
+<body>
+
+<h1>Description/infos sur le client</h1>
+
+
+<p th:text = "${client.email}"></p>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

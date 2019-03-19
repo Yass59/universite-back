@@ -1,0 +1,28 @@
+package fr.roudane.utilisateur.controller.impl;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import fr.roudane.utilisateur.controller.IUtilisateurController;
+import fr.roudane.utilisateur.domain.Utilisateur;
+import fr.roudane.utilisateur.service.impl.UtilisateurService;
+@Controller
+public class UtilisateurController implements IUtilisateurController {
+
+	@Override
+	@RequestMapping("/users")
+	public String getUtilisateurs(Model model) {
+
+		ArrayList<Utilisateur>liste = UtilisateurService.findallusers();
+		model.addAttribute("users",liste);
+		
+		
+		
+		
+		return "Utilisateur";
+	}
+
+}

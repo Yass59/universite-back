@@ -1,0 +1,22 @@
+package fr.roudane.pizzeria.controller.impl;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+import fr.roudane.pizzeria.controller.IPizzeriaController;
+@Controller
+public class PizzeriaController implements IPizzeriaController {
+
+	@Override
+	public String getPizza(Model model) {
+		
+		return null;
+	}
+
+	@Override
+	public String InfoPizza(Model model, Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

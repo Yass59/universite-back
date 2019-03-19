@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel = "stylesheet" th:href= "@{Css/pizza.css}"/>
+<title>Pizza</title>
+</head>
+<body>
+
+
+<h1>Pizza</h1>
+
+<table id = "table">
+<th></th>
+<th>numero</th>
+<th>libelle</th>
+<th>reference</th>
+<th>prix</th>
+<th>description</th>
+<tr th:each = "p : ${pizza}">
+
+<td><img th:src = "${p.photo}"></img></td>
+
+<td th:text = "${p.numero}"></td>
+<td th:text = "${p.libelle}"></td>
+<td th:text = "${p.reference}"></td>
+<td th:text = "${p.prix}"></td>
+<td th:text = "${p.description}"></td>
+</tr>
+</table>
+
+</body>
+</html>

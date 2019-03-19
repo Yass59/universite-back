@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Insert title here</title>
+<link rel = "stylesheet" th:href= "@{Css/pizzajout-.css}"/>
+</head>
+<body>
+
+
+
+	<h1>AJOUT D'UNE PIZZA</h1>
+
+
+
+
+	<form th:action="@{ajouter-client}" method="post" class="color"
+		th:object="${p}">
+		<fieldset>
+			<legend>Votre pizza</legend>
+
+			<label>Numero :</label> <input type="text" name="numero" 
+				class="dim_block2" id="colorBlock" th:field="*{numero}" /> <label>libelle
+				:</label> <input type="text" name="libelle" 
+				class="dim_block2" id="colorBlock" th:field="*{libelle}" /> <label>Reference</label>
+
+			<input type="text" name="reference" class="dim_block2" id="colorBlock"
+				th:field="*{reference}" /> <label>prix:</label> <input type="text"
+				name="prix" class="dim_block2" id="colorBlock"
+				th:field="*{prix}" /> <label>description :</label> <input type="text"
+				name="email" class="dim_block2" id="colorBlock"
+				th:field="*{description}" />  <label>Photo</label> <input type="text"
+				name="photo" class="dim_block2" id="colorBlock"
+				th:field="*{photo}" />
+
+
+
+
+		</fieldset>
+
+
+
+		<input type="submit" value="Envoyer" id="colorBlock" /> <input
+			type="submit" value="Annuler" id="colorBlock" />
+
+	</form>
+
+<a href="google">retour</a>
+</body>
+</html>

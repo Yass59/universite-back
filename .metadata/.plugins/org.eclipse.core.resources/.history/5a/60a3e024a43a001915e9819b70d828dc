@@ -1,0 +1,5 @@
+package fr.roudane.utilisateur.service.impl;
+
+public class UtilisateurService {
+
+}

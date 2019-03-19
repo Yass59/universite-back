@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<h1>Description de la pizza</h1>
+
+<p th:text = "${pizza.description}"></p>
+<p th:text = "${pizza.libelle}"></p>
+<img alt="image user" th:src ="${pizza.photo}"/>
+
+
+
+<a th:href = "@{modifier(id=${pizza.id})}">modifier</a>
+<a th:href = "@{supprimer(id=${pizza.id})}">supprimer</a>
+</body>
+</html>

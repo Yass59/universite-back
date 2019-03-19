@@ -1,0 +1,25 @@
+package fr.roudane.pizzeria.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import fr.roudane.pizzeria.repository.IpizzaRepository;
+import fr.roudane.pizzeria.service.IpizzaService;
+
+@Service
+public class PizzeriaService implements IpizzaService{
+
+	@Autowired IpizzaRepository pizzarepository;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

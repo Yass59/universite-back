@@ -1,0 +1,23 @@
+package fr.roudane.universite.enseignant.domain;
+
+import java.util.Date;
+
+public class Enseignant {
+
+	
+	
+	
+	private Integer id;
+	private Integer numero;
+	private String nom;
+	private String prenom;
+	private Date datenaissance;
+	private Character sexe;
+	private String grade;
+	
+	private Date dateembauche;
+	
+	
+	
+	
+}

@@ -1,0 +1,23 @@
+package fr.roudane.utilisateur.controller.impl;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import fr.roudane.utilisateur.controller.IUtilisateurController;
+@Controller
+public class UtilisateurController implements IUtilisateurController {
+
+	@Override
+	@RequestMapping("/users")
+	public String getUtilisateurs(Model model) {
+
+		
+		
+		
+		
+		
+		return "Utilisateur";
+	}
+
+}

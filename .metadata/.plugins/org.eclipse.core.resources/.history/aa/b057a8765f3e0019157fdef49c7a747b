@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+bonjour
+
+<p th:text = "${pizza.description}"></p>
+<p th:text = "${pizza.libelle}"></p>
+<img alt="image user" th:src ="${pizza.photo}"/>
+
+</body>
+</html>

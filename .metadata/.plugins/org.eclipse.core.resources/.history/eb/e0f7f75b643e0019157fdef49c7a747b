@@ -1,0 +1,50 @@
+package fr.roudane.pizzeria.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import fr.roudane.pizzeria.domain.PizzeriaBean;
+import fr.roudane.pizzeria.repository.IpizzaRepository;
+import fr.roudane.pizzeria.service.IpizzaService;
+
+
+@Service
+public class PizzeriaService implements IpizzaService{
+
+	@Autowired IpizzaRepository pizzarepository;
+
+	@Override
+	public List<PizzeriaBean> findAll() {
+	List<PizzeriaBean>liste = pizzarepository.findAll();
+		return liste ;
+	}
+
+	@Override
+	public PizzeriaBean findOnePizza(Integer id) {
+		
+		PizzeriaBean p = pizzarepository.getOne(id);
+		return p;
+		
+		
+	}
+
+	@Override
+	public void supprimer(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

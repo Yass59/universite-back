@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<link rel = "stylesheet" th:href= "@{Css/userinfo.css}"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>BONJOUR</h1>
+<p th:text = "${user.nom}"></p>
+<p th:text = "${user.prenom}"></p>
+<img alt="image user" th:src ="${user.photo}"/>
+
+<br/>
+<br/>
+<br/>
+<a href="users">users</a>
+<a th:href = "@{supprimer(id=${user.id})}">supprimer</a>
+
+</body>
+</html>

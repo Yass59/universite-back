@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Infos Client</title>
+</head>
+<body>
+
+<h1>Description/infos sur le client</h1>
+
+
+<p th:text = "${client.email}"></p>
+
+
+
+<p th:text = "${client.numero}"></p>
+<p th:text = "${client.nom}"></p>
+<p th:text = "${client.prenom}"></p>
+<p th:text = "${client.date}"></p>
+<p th:text = "${client.code_postal}"></p>
+<p th:text = "${client.email}"></p>
+<p th:text = "${client.phone}">
+<p th:text = "${client.ville}"></p>
+
+
+
+
+<a th:href = "@{modification(id=${client.id})}">modifier</a>
+<a th:href = "@{supprimer(id=${client.id})}">modifier</a>
+</body>
+</html>

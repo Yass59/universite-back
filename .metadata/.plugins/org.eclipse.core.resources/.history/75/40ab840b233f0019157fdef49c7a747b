@@ -1,0 +1,20 @@
+package fr.roudane.pizzeria.client.controller;
+
+import org.springframework.ui.Model;
+
+public interface IClientController {
+
+	
+	public String getCLIENT(Model model);
+	
+	
+	public String avoir1client (Model model, Integer id);
+	
+	
+	
+	
+	
+	
+	
+	
+}

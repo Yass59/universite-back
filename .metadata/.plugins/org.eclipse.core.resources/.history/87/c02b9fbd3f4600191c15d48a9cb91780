@@ -1,0 +1,5 @@
+package fr.aberwag.universite.controller.impl;
+
+public class EnseignantController {
+
+}

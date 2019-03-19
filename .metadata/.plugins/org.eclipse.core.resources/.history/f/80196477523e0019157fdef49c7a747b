@@ -1,0 +1,5 @@
+package fr.roudane.pizzeria.controller;
+
+public interface IPizzeriaController {
+
+}
